@@ -11,7 +11,7 @@ const Navbar = () => {
           <FaAlignRight></FaAlignRight>
         </button> 
       </div>
-      <pageLinks styleClass="navlinks"></pageLinks>
+      <PageLinks styleClass="nav-links"></PageLinks>
     </div>
   </nav>
 }
