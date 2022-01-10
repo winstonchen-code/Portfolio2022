@@ -5,6 +5,12 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
 const Jobs = () => {
+  const data = useStaticQuery(query)
+  const {
+    allStrapiJobs: { nodes: jobs },
+  } = data 
+  console.log(jobs)
+
   return <h2>jobs component</h2>
 }
 
