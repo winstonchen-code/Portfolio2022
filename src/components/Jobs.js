@@ -9,6 +9,7 @@ const Jobs = () => {
   const {
     allStrapiJobs: { nodes: jobs },
   } = data 
+  const [value,setValue] = React.useState(0)
   const {company,position,date,desc} = jobs[0];
   console.log(company,position,date,desc)
 
