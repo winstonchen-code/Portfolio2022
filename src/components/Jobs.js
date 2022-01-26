@@ -9,7 +9,8 @@ const Jobs = () => {
   const {
     allStrapiJobs: { nodes: jobs },
   } = data 
-  console.log(jobs)
+  const {company,position,date,desc} = jobs[0];
+  console.log(company,position,date,desc)
 
   return <h2>jobs component</h2>
 }
